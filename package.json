@@ -1,0 +1,26 @@
+{
+  "name": "poc-typescript-typings",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "types": "tsc --emitDeclarationOnly --outDir ./build",
+    "build": "babel ./src --extensions \".ts,.tsx\" --out-dir ./build --verbose"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/react": "^16.9.29",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^5.0.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1"
+  }
+}
